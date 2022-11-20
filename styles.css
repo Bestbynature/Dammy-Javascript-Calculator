@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right, #09d0f3, #b728e2);
+    display:flex
+}
+
+.calculator{
+  
+    max-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-content: center;
+    justify-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 10px solid black;
+    display: grid;
+    grid-template-rows: minmax(120px, auto);
+    
+}
+
+.output{
+
+    background: rgba(20, 17, 17, .7);
+    display: flex;
+    /* grid-template-rows: minmax(120px, auto); */
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.extend1{
+    grid-row: 3 / 5;
+    grid-column: 5;
+
+}
+
+.extend2{
+    grid-column: 3/5;
+    grid-row: 4;
+}
+
+.keypad{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(4, 100px);
+    padding:10px
+    
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(26, 24, 24, 0.75);
+    outline: none;
+    border: none;
+    color:rgba(255 , 255, 255, .99)
+}
+button:hover{
+    background: rgba(255 , 255, 255, .99);
+    color:black;
+    transition: 0.5s ease-in-out;
+    
+}
+
+button:focus{
+    background: rgba(12, 100, 231, 0.99);
+}
+
+#previous{
+    color: seashell;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: right;
+}
+
+#display{
+    font-size: 2.5rem;
+    color:rgba(255 , 255, 255, .99);
+    width: 100%;
+    text-align: right;
+}
+
+.light{
+    background: #09d0f3;
+    color:black
+}
+
+#operation{
+    background:rgba(255 , 255, 255, .2);
+    text-align: center;
+    font-size: 3rem;
+
+}
